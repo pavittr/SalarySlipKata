@@ -33,27 +33,6 @@ public class SalarySlip {
         return monthlyTaxableIncome;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        SalarySlip that = (SalarySlip) o;
-        return Objects.equals(id, that.id) &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(annualGrossSalary, that.annualGrossSalary) &&
-                Objects.equals(monthlyGrossSalary, that.monthlyGrossSalary) &&
-                Objects.equals(monthlyNationalInsuranceContributions, that.monthlyNationalInsuranceContributions) &&
-                Objects.equals(monthlyTaxFreeAllowance, that.monthlyTaxFreeAllowance) &&
-                Objects.equals(monthlyTaxableIncome, that.monthlyTaxableIncome) &&
-                Objects.equals(monthlyTaxPayable, that.monthlyTaxPayable);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, name, annualGrossSalary, monthlyGrossSalary, monthlyNationalInsuranceContributions, monthlyTaxFreeAllowance, monthlyTaxableIncome, monthlyTaxPayable);
-    }
-
     public Double getMonthlyTaxPayable() {
         return monthlyTaxPayable;
     }
